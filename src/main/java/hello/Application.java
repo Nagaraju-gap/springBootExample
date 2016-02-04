@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
-public class HelloWorld{
+public class Application{
 
     public static void main(String[] args) {
-        ApplicationContext ctx = SpringApplication.run(HelloWorld.class, args);
+        ApplicationContext ctx = SpringApplication.run(Application.class, args);
     }
 
     @RequestMapping("/")

@@ -31,5 +31,5 @@ dependencies {
 
 group = 'nagarajuJavvaji'
 sourceCompatibility = 1.7
-mainClassName = 'hello.HelloWorld'
+mainClassName = 'hello.Application'
 
