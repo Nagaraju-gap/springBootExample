@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+buildscript {
+    project.ext {
+        bootVersion = '1.2.3.RELEASE'
+    }
+    repositories {
+        maven { url 'http://repo.spring.io/libs-snapshot' }
+        mavenLocal()
+    }
+    dependencies {
+        classpath ("org.springframework.boot:spring-boot-gradle-plugin:${project.bootVersion}")
+    }
+}
+
+jar {
+    baseName = 'springBootExample'
+    version = '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'http://repo.spring.io/libs-snapshot' }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:${project.bootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-jetty:${project.bootVersion}")
+}
+
+group = 'nagarajuJavvaji'
+sourceCompatibility = 1.7
+mainClassName = 'hello.HelloWorld'
+
