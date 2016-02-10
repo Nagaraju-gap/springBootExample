@@ -20,7 +20,7 @@ public class Application{
 
     @RequestMapping("/")
     public String index() {
-        return "Hello to you, world";
+        return "Hello to you from springBootExample";
     }
 
     @RequestMapping("/greet")
